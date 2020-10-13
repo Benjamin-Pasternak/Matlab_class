@@ -36,12 +36,12 @@ end
 % you can call the same function in itself called recursion
 
 function s = print_n_stars(n)
-s='';
-if n==1
-    s=['*'];
-else
-    s = [print_n_stars(n-1) '*'];
-end
+    s='';
+    if n==1
+        s=['*'];
+    else
+        s = [print_n_stars(n-1) '*'];
+    end
 end
 
 

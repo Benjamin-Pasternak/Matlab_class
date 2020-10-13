@@ -69,38 +69,56 @@ end
 
 % 21 = night time 
 % 9 = daytime
-hour = input();
 
+% true && false -->everything is false
+% false || false
+% 
+% true || true --> true
+% false||true -->true
+% false||false-->false
+% true||false-->true
+% 
+% true && true --> true
+% false && true --> false
+% false && false --> false
+% true && false --> false
+% 
+% ~true --> false
+% ~false --> true
+% 
+% ~(true && true)--> false
+% 
+% true==true -->true
+% false==true -->false
+% ~(false==false) -->true
+% 
+% 10 != 11
 
-true && false -->everything is false
-false || false
-
-true || true --> true
-false||true -->true
-false||false-->false
-true||false-->true
-
-true && true --> true
-false && true --> false
-false && false --> false
-true && false --> false
-
-~true --> false
-~false --> true
-
-~(true && true)--> false
-
-true==true -->true
-false==true -->false
-~(false==false) -->true
-
-10 != 11
-
-
-
-
-if hour > 21 || hour < 9
-    disp("night time");
+day_or_night = input();
+if day_or_night == "day"
+    disp("day");
+elseif day_or_night == "night"
+    disp("night");
 end
+
+if day_or_night =="day"
+    disp("day");
+else
+    disp("night");
+end
+
+
+%using decisions to determine program output
+list = [1,2,3,4,5,6,7,8,9,10];
+for i = 1:length(list)
+    if mod(list(i),2)==0
+        disp('even: ',list(i));
+    else
+        disp('odd: ',list(i));
+    end
+end
+
+
+
 
 
